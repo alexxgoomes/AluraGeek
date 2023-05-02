@@ -1,0 +1,28 @@
+.banner {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("../img/Banner.png");
+    width: 100%;
+    padding: 5em 0 2em 1em;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.banner__texto {
+    color: var(--branco);
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.banner__link {
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: .75em 1em;
+    text-decoration: none;
+    width: 40%;
+}
