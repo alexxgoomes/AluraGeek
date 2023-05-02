@@ -1,0 +1,17 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/topicos.css");
+@import url("styles/saiba-mais.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root {
+    --cinza: #464646;
+    --branco: #FFFFFF;
+    --azul: #2A7AE4;
+    --fundo: #EAF2FD;
+    --fundo-pesquisa: #F5F5F5;
+    --placeholder: #A2A2A2;
+
+    --fonte-principal: 'Raleway', sans-serif;
+}
