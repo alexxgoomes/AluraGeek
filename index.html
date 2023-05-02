@@ -8,12 +8,148 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
     <header class="cabecalho">
-        
+        <div class="container">
+            <a href="#" class="container__logo"><img src="img/Logo.svg" alt="Logo da Alura Geek"></a>
+            <a href="#" class="container__login">Login</a>
+            <input type="checkbox" id="menu" class="container__pesquisa">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__pesquisa container__imagem"></span>
+            </label>
+            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?">
+        </div>
     </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Dezembro Promocional</h2>
+        <p class="banner__texto">Produtos selecionados com 33% de desconto</p>
+        <a href="#" class="banner__link">Ver Consoles</a>
+    </section>
+
+    <section class="topicos">
+        <div class="categoria">
+            <h2 class="titulo">Star Wars</h2>
+            <a href="#" class="titulo-link">Ver tudo</a>
+        </div>
+        <div class="produtos">
+            <div class="item">
+                <img src="./img/Caneca-stormtrooper.svg" alt="Caneca de Stormtrooper" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Lego-darth-vader.svg" alt="Lego do Darth Vader" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Boneco-yoda.svg" alt="Boneco do Mestre Yoda" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Stormtrooper.svg" alt="Stormtrooper" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+        </div>
+        <div class="categoria">
+            <h2 class="titulo">Consoles</h2>
+            <a href="#" class="titulo-link">Ver tudo</a>
+        </div>
+        <div class="produtos">
+            <div class="item">
+                <img src="./img/Xbox.svg" alt="Joystick de Xbox" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Ps5.svg" alt="Playstation 5" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Nintendo.svg" alt="Videogame Nintendo" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Switch.svg" alt="Joystick de Nintendo Switch" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+        </div>
+        <div class="categoria">
+            <h2 class="titulo">Diversos</h2>
+            <a href="#" class="titulo-link">Ver tudo</a>
+        </div>
+        <div class="produtos">
+            <div class="item">
+                <img src="./img/Camisa-atari.svg" alt="Camisa de Atari" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Camisa-snes.svg" alt="Camisa de Super Nintendo" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/Boneco-sonic.svg" alt="Boneco do Sonic" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+            <div class="item">
+                <img src="./img/relogio.svg" alt="Relógio marcando 4 horas e 20 minutos" class="topicos__imagem">
+                <p class="topicos__descricao">Produto XYZ</p>
+                <p class="topicos__valor">R$ 60,00</p>
+                <a href="#" class="topicos__link">Ver produto</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="saiba-mais">
+        <ul class="lista">
+            <img src="./img/Logo.svg" alt="Logo da Alura Geek" class="lista-imagem">
+            <li class="lista-link"><a href="#" class="lista-link">Quem somos nós</a></li>
+            <li class="lista-link"><a href="#" class="lista-link">Política de privacidade</a></li>
+            <li class="lista-link"><a href="#" class="lista-link">Programa fidelidade</a></li>
+            <li class="lista-link"><a href="#" class="lista-link">Nossas lojas</a></li>
+            <li class="lista-link"><a href="#" class="lista-link">Quero ser franqueado</a></li>
+            <li class="lista-link"><a href="#" class="lista-link">Anuncie aqui</a></li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fale conosco</h2>
+        <div class="rotulo">
+            <label for="text" class="contato-nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="nome" placeholder="Alex Gomes">
+        </div>
+        <div class="rotulo">
+            <label for="text" class="contato-mensagem">Escreva sua mensagem</label>
+            <input type="text" name="mensagem" id="mensagem" class="mensagem">
+        </div>
+        <a href="#" class="banner__link">Enviar mensagem</a>
+    </section>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Desenvolvido por Alex Gomes<br>2023</h2>
+    </footer>
 </body>
 </html>
