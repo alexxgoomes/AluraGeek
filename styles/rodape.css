@@ -1,4 +1,79 @@
-.rodape {
+.saiba-mais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.lista-imagem {
+    width: 50%;
+}
+
+.lista-link {
+    font-size: 16px;
+    padding: .5em 0;
+    text-decoration: none;
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    gap: 15px;
+}
+
+.fale-conosco__titulo {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rotulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco__nome, .fale-conosco__mensagem {
+    color: var(--placeholder);
+    position: absolute;
+    padding: .5em;
+}
+
+.fale-conosco__nome {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fale-conosco__mensagem {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nome, .mensagem {
+    border-style: none none solid none;
+    border-width: thin;
+    border-color: var(--cinza);
+    padding-top: 3em;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+.nome::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--placeholder);
+    padding: 0 .5em;
+}
+
+.container__rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,4 +86,49 @@
 
 .rodape__titulo {
     font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .contato {
+        display: flex;
+        justify-content: space-between;
+        margin: 4em 0;
+    }
+
+    .saiba-mais {
+        width: 50%;
+    }
+
+    .fale-conosco {
+        width: 50%;
+    }
+  
+}
+
+@media screen and (min-width: 1440px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+    }
+
+    .saiba-mais {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .lista-imagem {
+        width: 30%;
+    }
+
+    .lista {
+        margin: 0 3em;
+    }
+
+    .fale-conosco {
+        margin-right: 3em;
+        width: 40%;
+    }
+
+    .banner__link {
+        width: 21%;
+    }
 }
