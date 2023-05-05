@@ -1,9 +1,8 @@
 @import url("styles/header.css");
 @import url("styles/banner.css");
 @import url("styles/topicos.css");
-@import url("styles/saiba-mais.css");
-@import url("styles/contato.css");
 @import url("styles/rodape.css");
+@import url("styles/login.css");
 
 :root {
     --cinza: #464646;
