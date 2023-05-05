@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho__container">
+            <a href="index.html" class="container__logo"><img src="img/Logo.svg" alt="Logo da Alura Geek"></a>
+            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?">
+            <a href="login.html" class="container__login pagina-login">Login</a>
+            <input type="checkbox" id="menu" class="container__pesquisa">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__pesquisa container__imagem"></span>
+            </label>
+            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?">
+        </div>
+    </header>
+
+    <session class="login">
+        <form action="" class="formulario__login">
+            <fieldset class="iniciar-sessao">
+                <h2 class="iniciar-sessao__titulo">Iniciar Sessão</h2>
+                <input type="email" name="email" id="email" class="email" placeholder="Escreva seu email" minlength="4" required>
+                <input type="password" name="senha" id="senha" class="senha" placeholder="Escreva sua senha" minlength="8" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <div>
+                <input type="submit" value="Entrar" class="formulario__botao banner__link" data-botao-entrar>
+            </div>
+        </form>
+    </session>
+
+    <footer class="rodape">
+        <section class="contato">
+            <div class="saiba-mais">
+                <img src="./img/Logo.svg" alt="Logo da Alura Geek" class="lista-imagem">
+                <ul class="lista">
+                    <li class="lista-link"><a href="#" class="lista-link">Quem somos nós</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Política de privacidade</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Programa fidelidade</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Nossas lojas</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Quero ser franqueado</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Anuncie aqui</a></li>
+                </ul>
+            </div>
+
+            <div class="fale-conosco">
+                <h2 class="fale-conosco__titulo">Fale conosco</h2>
+                <div class="rotulo">
+                    <label for="text" class="fale-conosco__nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="nome" placeholder="Alex Gomes">
+                </div>
+                <div class="rotulo">
+                    <label for="text" class="fale-conosco__mensagem">Escreva sua mensagem</label>
+                    <input type="text" name="mensagem" id="mensagem" class="mensagem">
+                </div>
+                <a href="#" class="banner__link">Enviar mensagem</a>
+            </div>
+        </section>
+        <div class="container__rodape">
+            <h2 class="rodape__titulo">Desenvolvido por Alex Gomes<br>2023</h2>
+        </div>
+    </footer>
+</body>
+</html>
