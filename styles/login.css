@@ -1,0 +1,91 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7em 0;
+}
+
+.formulario__login {
+    width: 100%;
+}
+
+.iniciar-sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iniciar-sessao__titulo {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.email, 
+.senha {
+    padding: .5em 1em;
+    border-radius: 4px;
+    margin-bottom: .5em;
+    width: 70%;
+}
+
+.email {
+    border: 0;
+}
+
+.email::placeholder, 
+.senha::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--placeholder);
+    padding: 0 .5em;
+}
+
+.senha {
+    border-style: none none solid none;
+    border-width: thin;
+    border-color: var(--cinza);
+}
+
+.formulario__botao {
+    border: none;
+    width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+    .email,
+    .senha {
+        width: 30%;
+        margin-bottom: 1em;
+    }
+
+    .formulario__botao {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .iniciar-sessao__titulo {
+        font-size: 18px;
+    }
+
+    .email,
+    .senha {
+        width: 20%;
+        padding: 1.5em 0;
+    }
+
+    .email {
+        border-style: none none solid none;
+        border-width: thin;
+        border-color: var(--cinza);
+    }
+
+    .formulario__botao {
+        width: 20%;
+        padding: 1.5em 0;
+    }
+}
