@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="container__logo"><img src="img/Logo.svg" alt="Logo da Alura Geek"></a>
+            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?">
+            <a href="login.html" class="container__login login-none">Login</a>
+            <a href="login.html" class="container__login">Menu administrador</a>
+            <input type="checkbox" id="menu" class="container__pesquisa">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__pesquisa container__imagem"></span>
+            </label>
+            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?">
+        </div>
+    </header>
+    <section class="adicionador">
+        <h2 class="todos-produtos__titulo titulo adicionar__titulo">Adicionar novo produto</h2>
+        <form class="formulario__produto" id="form-produto">
+            <div class="rotulo">
+                <label for="text" class="fale-conosco__mensagem">URL da imagem</label>
+                <input type="text" name="mensagem" id="url" class="mensagem mensagem-adicionar">
+            </div>
+            <div class="rotulo">
+                <label for="text" class="fale-conosco__nome">Categoria</label>
+                <input type="text" name="nome" id="categoria" class="nome mensagem-adicionar" placeholder="Consoles">
+            </div>
+            <div class="rotulo">
+                <label for="text" class="fale-conosco__nome">Nome do produto</label>
+                <input type="text" name="nome" id="nome-do-produto" class="nome mensagem-adicionar" placeholder="Produto XYZ">
+            </div>
+            <div class="rotulo">
+                <label for="text" class="fale-conosco__nome">Preço do produto</label>
+                <input type="text" name="nome" id="preco" class="nome mensagem-adicionar" placeholder="R$ 60,00">
+            </div>
+            <div class="rotulo">
+                <label for="text" class="fale-conosco__mensagem">Descrição do produto</label>
+                <input type="text" name="mensagem" id="descricao" class="mensagem mensagem-adicionar">
+            </div>
+            <input id="botao" type="submit" value="Adicionar produto" class="banner__link link__adicionar">
+        </form>
+    </section>
+    <footer class="rodape">
+        <section class="contato">
+            <div class="saiba-mais">
+                <img src="./img/Logo.svg" alt="Logo da Alura Geek" class="lista-imagem">
+                <ul class="lista">
+                    <li class="lista-link"><a href="#" class="lista-link">Quem somos nós</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Política de privacidade</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Programa fidelidade</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Nossas lojas</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Quero ser franqueado</a></li>
+                    <li class="lista-link"><a href="#" class="lista-link">Anuncie aqui</a></li>
+                </ul>
+            </div>
+
+            <div class="fale-conosco">
+                <h2 class="fale-conosco__titulo">Fale conosco</h2>
+                <div class="rotulo">
+                    <label for="text" class="fale-conosco__nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="nome" placeholder="Alex Gomes">
+                </div>
+                <div class="rotulo">
+                    <label for="text" class="fale-conosco__mensagem">Escreva sua mensagem</label>
+                    <input type="text" name="mensagem" id="mensagem" class="mensagem">
+                </div>
+                <input type="submit" value="Enviar mensagem" class="banner__link">
+            </div>
+        </section>
+        <div class="container__rodape">
+            <h2 class="rodape__titulo">Desenvolvido por Alex Gomes<br>2023</h2>
+        </div>
+    </footer>
+    <script src="js/adicionar-produtos.js" type="module"></script>
+</body>
+</html>
