@@ -1,0 +1,32 @@
+.login-none {
+    display: none;
+}
+
+.formulario__produto {
+    margin: 1em;
+}
+
+.mensagem-adicionar {
+    margin-bottom: 1em;
+}
+
+.link__adicionar {
+    width: 100%;
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .adicionador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .formulario__produto {
+        width: 40%;
+    }
+
+    .adicionar__titulo {
+        width: 40%;
+    }
+}
