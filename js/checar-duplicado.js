@@ -11,7 +11,3 @@
         window.location.href = "./adicionar-produtos.html";
     });
 
-export default function checaItens() {
-    console.log(adicionar);
-}
-
