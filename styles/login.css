@@ -50,6 +50,11 @@
     border-color: var(--cinza);
 }
 
+.mensagem-erro {
+    margin-bottom: 1em;
+    color: red;
+}
+
 .formulario__botao {
     border: none;
     width: 20%;
