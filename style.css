@@ -5,6 +5,7 @@
 @import url("styles/login.css");
 @import url("styles/produtos.css");
 @import url("styles/adicionar-produtos.css");
+@import url("styles/erro.css");
 
 :root {
     --cinza: #464646;
@@ -13,6 +14,7 @@
     --fundo: #EAF2FD;
     --fundo-pesquisa: #F5F5F5;
     --placeholder: #A2A2A2;
+    --sombra: 0 5px 10px #55a6ff38;
 
     --fonte-principal: 'Raleway', sans-serif;
 }
