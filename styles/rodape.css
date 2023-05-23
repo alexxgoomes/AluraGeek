@@ -55,7 +55,7 @@
     font-weight: 400;
 }
 
-.nome, .mensagem {
+.nome-fale-conosco, .mensagem {
     border-style: none none solid none;
     border-width: thin;
     border-color: var(--cinza);
@@ -65,7 +65,7 @@
     color: var(--cinza);
 }
 
-.nome::placeholder {
+.nome-fale-conosco::placeholder {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
