@@ -1,0 +1,46 @@
+.erro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--branco);
+    box-shadow: var(--sombra);
+    margin: 2em 5em;
+    padding: 3em;
+    border-radius: 15px;
+}
+
+.erro-imagem {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/denied.svg");
+}
+
+.erro__titulo {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .erro {
+        margin: 2em 10em;
+    }
+
+    .erro__titulo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .erro {
+        margin: 2em 30em;
+    }
+
+    .erro__titulo {
+        font-size: 32px;
+    }
+}
