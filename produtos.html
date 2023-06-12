@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/4353dcaae5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -21,7 +22,7 @@
             <label for="menu" class="container__rotulo">
                 <span class="cabecalho__pesquisa container__imagem"></span>
             </label>
-            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?">
+            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?" data-pesquisa>
         </div>
     </header>
 
@@ -53,7 +54,7 @@
                 <h2 class="fale-conosco__titulo">Fale conosco</h2>
                 <div class="rotulo">
                     <label for="text" class="fale-conosco__nome">Nome</label>
-                    <input type="text" name="nome" id="nome" class="nome" placeholder="Alex Gomes">
+                    <input type="text" name="nome-fale-conosco" id="nome-fale-conosco" class="nome-fale-conosco" placeholder="Alex Gomes">
                 </div>
                 <div class="rotulo">
                     <label for="text" class="fale-conosco__mensagem">Escreva sua mensagem</label>
@@ -68,5 +69,6 @@
     </footer>
     <script src="js/adicionar-produtos.js" type="module"></script>
     <script src="js/checar-duplicado.js"></script>
+    <script src="js/buscar-produto.js"></script>
 </body>
 </html>
