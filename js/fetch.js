@@ -1,18 +1,15 @@
-const listaProdutos = () => {
-    return fetch(`http://localhost:3000/produtos`)
-    .then(resposta => {
-        if(resposta.ok){
-            return resposta.json();
-        };
-        throw new Error('Não foi possível carregar os produtos');
-    })
-};
+async function listaProdutos() {
+    const resposta = await fetch(`http://localhost:3000/produtos`)
+    const respostaConvertida = await resposta.json();
+    
+    return respostaConvertida;
+}
 
-const criaProduto = (categoria, descricao, nome, preco, url) => {
-    return fetch(`http://localhost:3000/produtos`, {
+async function criaProduto(categoria, descricao, nome, preco, url) {
+    const resposta = await fetch(`http://localhost:3000/produtos`, {
         method: 'POST',
         headers: {
-            'Content-Type' : 'application/json'
+            'Content-type' : 'application/json'
         },
         body: JSON.stringify({
             categoria: categoria,
@@ -22,26 +19,30 @@ const criaProduto = (categoria, descricao, nome, preco, url) => {
             url: url
         })
     })
-    .then(resposta => {
-        if(resposta.ok){
-            return resposta.body;
-        }
-        throw new Error('Não foi possível criar um produto');
-    });
-};
+    const respostaConvertida = await resposta.json();
 
-const deletaProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`, {
+    return respostaConvertida;
+}
+
+async function deletaProduto(id) {
+    const resposta = await fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'DELETE'
-    }).then(resposta => {
-        if(!resposta.ok){
-            throw new Error('Não foi possível deletar produto');
-        }
     })
+    const respostaConvertida = resposta.json();
+
+    return respostaConvertida;
+}
+
+async function buscarProduto(termoDeBusca) {
+    const resposta = await fetch(`http://localhost:3000/produtos?q=${termoDeBusca}`)
+    const conexaoConvertida = conexao.json();
+
+    return conexaoConvertida;
 }
 
 export const produtoService = {
     listaProdutos,
     criaProduto,
-    deletaProduto
+    deletaProduto,
+    buscarProduto
 };
