@@ -1,6 +1,6 @@
 import {produtoService} from './fetch.js';
 
-function criaNovaLinha(url, descricao,nome, preco, id) {
+function criaNovaLinha(url, descricao, nome, preco, id) {
     const linhaNovoProduto = document.createElement('div');
     if (linhaNovoProduto.classList) {
         linhaNovoProduto.classList.add("item");
@@ -45,7 +45,7 @@ async function render() {
         const listaProdutos = await produtoService.listaProdutos();
 
         listaProdutos.forEach(elemento => {
-        produto.appendChild(criaNovaLinha(elemento.url, elemento.nome, elemento.preco, elemento.id));
+            produto.appendChild(criaNovaLinha(elemento.url, elemento.descricao, elemento.nome, elemento.preco, elemento.id));
     });
     } catch(erro) {
         console.log(erro);
