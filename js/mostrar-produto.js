@@ -39,7 +39,7 @@ async function render() {
             });
         } catch(erro) {
             console.log(erro)
-            window.location.href="./erro.html"
+            // window.location.href="./erro.html"
         }
 }
 
