@@ -1,6 +1,6 @@
 import { produtoService } from "./fetch.js";
 
-function mostraLinha(url, descricao, nome, preco, id) {
+export default function mostraLinha(url, descricao, nome, preco, id) {
     const mostraProduto = document.createElement('div');
     if (mostraProduto.classList) {
         mostraProduto.classList.add("item");
