@@ -16,13 +16,13 @@
     <header class="cabecalho">
         <div class="container">
             <a href="index.html" class="container__logo"><img src="img/Logo.svg" alt="Logo da Alura Geek"></a>
-            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?">
             <a href="login.html" class="container__login">Login</a>
             <input type="checkbox" id="menu" class="container__pesquisa">
             <label for="menu" class="container__rotulo">
                 <span class="cabecalho__pesquisa container__imagem"></span>
             </label>
-            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?" data-pesquisa>
+            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?" data-pesquisa>
+            <button class="botao__pesquisa" data-botao-pesquisa></button>
         </div>
     </header>
 
@@ -32,7 +32,7 @@
         <a href="produtos.html" class="banner__link">Ver todos os produtos</a>
     </section>
 
-    <section class="topicos">
+    <section class="topicos" data-lista>
         <div class="categoria-produto">
             <div class="categoria">
                 <h2 class="titulo">Star Wars</h2>
@@ -94,6 +94,6 @@
         </div>
     </footer>
     <script type="module" src="js/mostrar-produto.js"></script>
-    <script src="js/buscar-produto.js"></script>
+    <script type="module" src="js/buscar-produto.js"></script>
 </body>
 </html>

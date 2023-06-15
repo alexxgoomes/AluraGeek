@@ -33,16 +33,16 @@ async function deletaProduto(id) {
     return respostaConvertida;
 }
 
-async function buscarProduto(termoDeBusca) {
+async function buscaProduto(termoDeBusca) {
     const resposta = await fetch(`http://localhost:3000/produtos?q=${termoDeBusca}`)
-    const conexaoConvertida = conexao.json();
+    const respostaConvertida = resposta.json();
 
-    return conexaoConvertida;
+    return respostaConvertida;
 }
 
 export const produtoService = {
     listaProdutos,
     criaProduto,
     deletaProduto,
-    buscarProduto
+    buscaProduto
 };

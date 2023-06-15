@@ -16,17 +16,17 @@
     <header class="cabecalho">
         <div class="container cabecalho__container">
             <a href="index.html" class="container__logo"><img src="img/Logo.svg" alt="Logo da Alura Geek"></a>
-            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?">
             <a href="login.html" class="container__login pagina-login">Login</a>
             <input type="checkbox" id="menu" class="container__pesquisa">
             <label for="menu" class="container__rotulo">
                 <span class="cabecalho__pesquisa container__imagem"></span>
             </label>
-            <input type="search" name="search" id="pesquisa" class="pesquisa" placeholder="O que deseja encontrar?" data-pesquisa>
+            <input type="search" name="search" id="pesquisa" class="pesquisa pesquisa-centro" placeholder="O que deseja encontrar?" data-pesquisa>
+            <button class="botao__pesquisa" data-botao-pesquisa></button>
         </div>
     </header>
 
-        <section class="topicos">
+        <section class="topicos" data-lista>
             <h2 class="todos-produtos__titulo titulo">Todos os produtos</h2>
             <form id="adicionar-produto" data-adicionar>
                 <input type="submit" value="Adicionar produto" class="todos-produtos__botao banner__link">
@@ -69,6 +69,6 @@
     </footer>
     <script src="js/adicionar-produtos.js" type="module"></script>
     <script src="js/checar-duplicado.js"></script>
-    <script src="js/buscar-produto.js"></script>
+    <script src="js/buscar-produto.js" type="module"></script>
 </body>
 </html>

@@ -91,8 +91,8 @@
     {
       "id": 12,
       "categoria": "Consoles",
-      "descricao": "Game Boy",
-      "nome": "Game Boy",
+      "descricao": "Game Boy Color",
+      "nome": "Game Boy Color",
       "preco": "R$ 60,00",
       "url": "./img/Game-boy.svg"
     },
