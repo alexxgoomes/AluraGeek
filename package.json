@@ -2,16 +2,30 @@
   "name": "alurageek",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "18.x || 16.x"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "test": "node test.js"
   },
-  "keywords": [],
-  "author": "Alex Gomes",
-  "license": "ISC",
-  "devDependencies": {},
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
   "repository": {
     "type": "git",
-    "url": "AluraGeek"
-  }
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
