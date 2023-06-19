@@ -1,12 +1,12 @@
 async function listaProdutos() {
-    const resposta = await fetch(`http://localhost:3000/produtos`)
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos`)
     const respostaConvertida = await resposta.json();
     
     return respostaConvertida;
 }
 
 async function criaProduto(categoria, descricao, nome, preco, url) {
-    const resposta = await fetch(`http://localhost:3000/produtos`, {
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos`, {
         method: 'POST',
         headers: {
             'Content-type' : 'application/json'
@@ -25,7 +25,7 @@ async function criaProduto(categoria, descricao, nome, preco, url) {
 }
 
 async function deletaProduto(id) {
-    const resposta = await fetch(`http://localhost:3000/produtos/${id}`, {
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`, {
         method: 'DELETE'
     })
     const respostaConvertida = resposta.json();
@@ -34,7 +34,7 @@ async function deletaProduto(id) {
 }
 
 async function buscaProduto(termoDeBusca) {
-    const resposta = await fetch(`http://localhost:3000/produtos?q=${termoDeBusca}`)
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos?q=${termoDeBusca}`)
     const respostaConvertida = resposta.json();
 
     return respostaConvertida;
