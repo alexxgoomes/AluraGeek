@@ -4,8 +4,8 @@
   "description": "<h1>Alura Geek</h1>",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node_env=production node server.js"
+    "dev": "set node_env=developer node server.js",
+    "start": "set node_env=production node server.js"
   },
   "dependencies": {
     "ejs": "^3.1.5",
