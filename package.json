@@ -1,7 +1,7 @@
 {
   "name": "alurageek",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1>Alura Geek</h1>",
   "engines": {
     "node": "18.x || 16.x"
   },
@@ -18,12 +18,19 @@
     "got": "^11.3.0",
     "tape": "^4.7.0"
   },
-  "repository": "https://github.com/alexxgoomes/AluraGeek",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexxgoomes/AluraGeek.git"
+  },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
   "license": "MIT",
-  "author": "Alex Gomes <alexsgomes0704@gmail.com>"
+  "author": "Alex Gomes <alexsgomes0704@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/alexxgoomes/AluraGeek/issues"
+  },
+  "homepage": "https://github.com/alexxgoomes/AluraGeek#readme"
 }
