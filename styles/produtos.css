@@ -6,3 +6,12 @@
     position: absolute;
     padding:0.5em 0 0 0.5em;
 }
+
+.lapis {
+    width: 100%;
+}
+
+.produto__lapis {
+    position: absolute;
+    padding:0.5em 0 0 2em;
+}

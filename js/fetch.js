@@ -40,9 +40,37 @@ async function buscaProduto(termoDeBusca) {
     return respostaConvertida;
 }
 
+async function detalhaProduto(id) {
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`)
+    const respostaConvertida = resposta.json();
+
+    return respostaConvertida;
+}
+
+async function atualizaProduto(id, categoria, descricao, nome, preco, url) {
+    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-type' : 'application/json'
+        },
+        body: JSON.stringify({
+            categoria: categoria,
+            descricao: descricao,
+            nome: nome,
+            preco: preco,
+            url: url
+        })
+    })
+    const respostaConvertida = resposta.json();
+
+    return respostaConvertida;
+}
+
 export const produtoService = {
     listaProdutos,
     criaProduto,
     deletaProduto,
-    buscaProduto
+    buscaProduto,
+    detalhaProduto,
+    atualizaProduto
 };

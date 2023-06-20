@@ -12,6 +12,9 @@ function criaNovaLinha(url, descricao, nome, preco, id) {
                 <div class="lixeira">
                     <img class="produto__lixeira" src="./img/Lixeira.svg" alt="Lixeira">
                 </div>
+                <div class="lapis">
+                    <a href="./editar-produto.html?id=${id}"> <img class="produto__lapis" src="./img/Lapis.svg" alt="Lápis"></a>
+                </div>
                 <img src="${url}" alt="${descricao}" class="topicos__imagem">
             </a>
             <p class="topicos__descricao">${nome}</p>

@@ -1,8 +1,8 @@
 import { produtoService } from "./fetch.js";
 
-const fromulario = document.querySelector('[data-formulario]');
+const formulario = document.querySelector('[data-formulario]');
 
-fromulario.addEventListener("submit", async (evento) => {
+formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
     try {
         const categoria = evento.target.querySelector('[data-categoria]').value;
@@ -15,6 +15,6 @@ fromulario.addEventListener("submit", async (evento) => {
         window.location.href = "../produtos.html";
     } catch(erro) {
         console.log(erro);
-        window.location.href = "../erro.html";
+        //window.location.href = "../erro.html";
     }
     });
