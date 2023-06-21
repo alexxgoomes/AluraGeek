@@ -47,18 +47,18 @@ async function detalhaProduto(id) {
     return respostaConvertida;
 }
 
-async function atualizaProduto(id, categoria, descricao, nome, preco, url) {
+async function atualizaProduto(id, url, categoria, nome, preco, descricao) {
     const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type' : 'application/json'
         },
         body: JSON.stringify({
+            url: url,
             categoria: categoria,
-            descricao: descricao,
             nome: nome,
             preco: preco,
-            url: url
+            descricao: descricao
         })
     })
     const respostaConvertida = resposta.json();
