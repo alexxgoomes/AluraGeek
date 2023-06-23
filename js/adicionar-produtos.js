@@ -8,15 +8,16 @@ function criaNovaLinha(url, descricao, nome, preco, id) {
         linhaNovoProduto.className = "item";
     };
     const conteudo = `
-            <a href="#" class="topicos__imagem__link">
+            <a href="#" class="topicos__imagem__link"></a>
                 <div class="lixeira">
                     <img class="produto__lixeira" src="./img/Lixeira.svg" alt="Lixeira">
                 </div>
                 <div class="lapis">
-                    <a href="./editar-produto.html?id=${id}"> <img class="produto__lapis" src="./img/Lapis.svg" alt="Lápis"></a>
+                    <a href="./editar-produto.html?id=${id}">
+                        <img class="produto__lapis" src="./img/Lapis.svg" alt="Lápis">
+                    </a>
                 </div>
                 <img src="${url}" alt="${descricao}" class="topicos__imagem">
-            </a>
             <p class="topicos__descricao">${nome}</p>
             <p class="topicos__valor">${preco}</p>
             <a href="#" class="topicos__link">Ver produto</a>
@@ -38,7 +39,7 @@ produto.addEventListener("click", async (evento) => {
             linhaProduto.remove();
         } catch(erro) {
             console.log(erro);
-            window.location.href = '../erro.html';
+            //window.location.href = '../erro.html';
         };
     };
 });
@@ -52,7 +53,7 @@ async function render() {
     });
     } catch(erro) {
         console.log(erro);
-        window.location.href = '../erro.html';
+        //window.location.href = '../erro.html';
     };
     
 };

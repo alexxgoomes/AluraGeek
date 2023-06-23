@@ -61,7 +61,7 @@ async function atualizaProduto(id, url, categoria, nome, preco, descricao) {
             descricao: descricao
         })
     })
-    const respostaConvertida = resposta.json();
+    const respostaConvertida = await resposta.json();
 
     return respostaConvertida;
 }

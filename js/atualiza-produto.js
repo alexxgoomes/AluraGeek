@@ -24,6 +24,6 @@ formulario.addEventListener("submit", evento => {
     evento.preventDefault();
     produtoService.atualizaProduto(id, inputURL.value, inputCategoria.value, inputNome.value, inputPreco.value, inputDescricao.value)
     .then(()=> {
-        window.location.href = "./produtos.html"
+        window.location.href = "./editado.html"
     })
 })
