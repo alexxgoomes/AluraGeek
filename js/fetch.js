@@ -1,12 +1,12 @@
 async function listaProdutos() {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos`)
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos`)
     const respostaConvertida = await resposta.json();
     
     return respostaConvertida;
 }
 
 async function criaProduto(categoria, descricao, nome, preco, url) {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos`, {
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos`, {
         method: 'POST',
         headers: {
             'Content-type' : 'application/json'
@@ -25,7 +25,7 @@ async function criaProduto(categoria, descricao, nome, preco, url) {
 }
 
 async function deletaProduto(id) {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`, {
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos/${id}`, {
         method: 'DELETE'
     })
     const respostaConvertida = resposta.json();
@@ -34,21 +34,21 @@ async function deletaProduto(id) {
 }
 
 async function buscaProduto(termoDeBusca) {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos?q=${termoDeBusca}`)
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos?q=${termoDeBusca}`)
     const respostaConvertida = resposta.json();
 
     return respostaConvertida;
 }
 
 async function detalhaProduto(id) {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`)
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos/${id}`)
     const respostaConvertida = resposta.json();
 
     return respostaConvertida;
 }
 
 async function atualizaProduto(id, url, categoria, nome, preco, descricao) {
-    const resposta = await fetch(`https://zany-cyan-coral-veil.cyclic.app/produtos/${id}`, {
+    const resposta = await fetch(`https://my-json-server.typicode.com/alexxgoomes/json-server-alurageek/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type' : 'application/json'

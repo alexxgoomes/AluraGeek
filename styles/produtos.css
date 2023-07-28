@@ -1,5 +1,6 @@
 .lixeira {
     width: 100%;
+    cursor: pointer;
 }
 
 .produto__lixeira {
